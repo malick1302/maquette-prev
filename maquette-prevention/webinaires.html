@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ernest — Webinaires</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="logo-link" href="index.html">
+        <img class="logo" src="assets/logo.png" alt="ernest" />
+      </a>
+      <nav class="side-nav" aria-label="Navigation">
+        <p class="nav-label">Menu</p>
+        <a href="index.html">Accueil</a>
+        <a href="actualites.html">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8h10M7 12h6M6 4h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H11l-4 3v-3H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>
+          Actualités
+        </a>
+        <a class="is-active" href="webinaires.html" aria-current="page">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H4zM9 20h6M12 16v4"/></svg>
+          Webinaires
+        </a>
+        <a href="#quiz" data-soon>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5l2.2 4.6 5 .7-3.6 3.5.9 5.1L12 15l-4.5 2.4.9-5.1L4.8 8.8l5-.7z"/></svg>
+          Quiz
+        </a>
+        <a href="aide.html">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 4v2M12 18v2M4 12h2M18 12h2"/></svg>
+          Aide
+        </a>
+
+        <p class="nav-label nav-account">Compte</p>
+        <a href="index.html#footer">Contacts</a>
+        <a href="#deconnexion" data-soon>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 7V5a2 2 0 0 1 2-2h7v18h-7a2 2 0 0 1-2-2v-2M4 12h11M12 8l4 4-4 4"/></svg>
+          Déconnexion
+        </a>
+
+        <a class="nav-strong" href="#profil" data-soon>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 19.5a6.5 6.5 0 0 1 13 0"/></svg>
+          Mon profil
+        </a>
+      </nav>
+    </aside>
+
+    <main>
+      <div class="webinar">
+        <h1>Webinaires</h1>
+        <p class="webinar-lede">Inscrivez-vous à notre prochain webinaire&nbsp;!</p>
+
+        <article class="webinar-card">
+          <img
+            src="assets/session.png"
+            alt="Personne et son chien face à un ordinateur, entourés de signes d’arnaques"
+          />
+          <div>
+            <h2>Reconnaître et éviter les principales arnaques en ligne</h2>
+            <p class="webinar-meta">
+              <span>16/10/2026</span>
+              <span>10:00</span>
+              <span>1 h</span>
+            </p>
+            <p>
+              Faux messages, sites frauduleux, offres trop belles pour être
+              vraies, demandes de paiement urgentes… Les arnaques en ligne
+              peuvent prendre de nombreuses formes et il n’est pas toujours
+              facile de les repérer.
+            </p>
+            <p class="webinar-host">Présenté par Malick</p>
+          </div>
+        </article>
+
+        <div class="webinar-cta">
+          <button class="cube-btn" type="button" aria-label="Je m’inscris">
+            <span class="cube">
+              <span class="face face-front">Je m’inscris</span>
+              <span class="face face-top" aria-hidden="true">Je m’inscris</span>
+            </span>
+          </button>
+        </div>
+
+        <hr class="webinar-rule" />
+
+        <section class="webinar-guide" aria-labelledby="guide-title">
+          <h2 id="guide-title">Guide</h2>
+          <h3>Comment ça marche&nbsp;?</h3>
+          <ol>
+            <li>1. Choisissez une date qui vous convient et inscrivez-vous en un clic.</li>
+            <li>2. Rejoignez le webinaire depuis votre ordinateur, tablette ou téléphone.</li>
+            <li>3. Complétez aussi les mini modules pour ancrer vos acquis à votre rythme.</li>
+          </ol>
+        </section>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ernest — Fil d’actualités</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="logo-link" href="index.html">
+        <img class="logo" src="assets/logo.png" alt="ernest" />
+      </a>
+      <nav class="side-nav" aria-label="Navigation">
+        <p class="nav-label">Menu</p>
+        <a href="index.html">Accueil</a>
+        <a class="is-active" href="actualites.html" aria-current="page">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8h10M7 12h6M6 4h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H11l-4 3v-3H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>
+          Actualités
+        </a>
+        <a href="webinaires.html">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H4zM9 20h6M12 16v4"/></svg>
+          Webinaires
+        </a>
+        <a href="#quiz" data-soon>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5l2.2 4.6 5 .7-3.6 3.5.9 5.1L12 15l-4.5 2.4.9-5.1L4.8 8.8l5-.7z"/></svg>
+          Quiz
+        </a>
+        <a href="aide.html">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 4v2M12 18v2M4 12h2M18 12h2"/></svg>
+          Aide
+        </a>
+
+        <p class="nav-label nav-account">Compte</p>
+        <a href="index.html#footer">Contacts</a>
+        <a href="#deconnexion" data-soon>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 7V5a2 2 0 0 1 2-2h7v18h-7a2 2 0 0 1-2-2v-2M4 12h11M12 8l4 4-4 4"/></svg>
+          Déconnexion
+        </a>
+
+        <a class="nav-strong" href="#profil" data-soon>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 19.5a6.5 6.5 0 0 1 13 0"/></svg>
+          Mon profil
+        </a>
+      </nav>
+    </aside>
+
+    <main>
+      <div class="feed">
+        <p class="feed-kicker">Veille</p>
+        <div class="feed-intro">
+          <div>
+            <h1>Fil d’actualités des arnaques</h1>
+            <p class="feed-lede">
+              Décryptages, alertes et conseils pour reconnaître les fraudes du
+              moment et adopter les bons réflexes.
+            </p>
+          </div>
+          <input
+            class="feed-search"
+            type="search"
+            data-feed-search
+            aria-label="Rechercher une actualité"
+          />
+        </div>
+
+        <div class="feed-list" data-feed-list>
+          <article class="feed-item" data-feed-item>
+            <img src="assets/article-axa.png" alt="Logo AXA" />
+            <div>
+              <h2>FBI&nbsp;: une arnaque contourne la double authentification Microsoft 365</h2>
+              <p class="feed-date">16/05/2026</p>
+              <p class="feed-excerpt">
+                Un kit de phishing accessible permet de voler des accès
+                professionnels en contournant le MFA. Les entreprises utilisant
+                Microsoft 365 sont particulièrement exposées. Les cybercriminels
+                exploitent des leurres automatisés pour piéger leurs victimes.
+              </p>
+            </div>
+          </article>
+          <article class="feed-item" data-feed-item>
+            <img src="assets/article-axa.png" alt="Logo AXA" />
+            <div>
+              <h2>FBI&nbsp;: une arnaque contourne la double authentification Microsoft 365</h2>
+              <p class="feed-date">16/05/2026</p>
+              <p class="feed-excerpt">
+                Un kit de phishing accessible permet de voler des accès
+                professionnels en contournant le MFA. Les entreprises utilisant
+                Microsoft 365 sont particulièrement exposées. Les cybercriminels
+                exploitent des leurres automatisés pour piéger leurs victimes.
+              </p>
+            </div>
+          </article>
+          <article class="feed-item" data-feed-item>
+            <img src="assets/article-axa.png" alt="Logo AXA" />
+            <div>
+              <h2>FBI&nbsp;: une arnaque contourne la double authentification Microsoft 365</h2>
+              <p class="feed-date">16/05/2026</p>
+              <p class="feed-excerpt">
+                Un kit de phishing accessible permet de voler des accès
+                professionnels en contournant le MFA. Les entreprises utilisant
+                Microsoft 365 sont particulièrement exposées. Les cybercriminels
+                exploitent des leurres automatisés pour piéger leurs victimes.
+              </p>
+            </div>
+          </article>
+          <p class="feed-empty" data-feed-empty hidden>
+            Aucune actualité ne correspond à cette recherche.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

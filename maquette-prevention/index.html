@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ernest — Prévention numérique</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="logo-link" href="#accueil">
+        <img class="logo" src="assets/logo.png" alt="ernest" />
+      </a>
+      <nav class="side-nav" aria-label="Navigation">
+        <p class="nav-label">Menu</p>
+        <a class="is-active" href="#accueil" aria-current="page">Accueil</a>
+        <a href="actualites.html">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8h10M7 12h6M6 4h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H11l-4 3v-3H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>
+          Actualités
+        </a>
+        <a href="webinaires.html">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H4zM9 20h6M12 16v4"/></svg>
+          Webinaires
+        </a>
+        <a href="#quiz" data-soon>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5l2.2 4.6 5 .7-3.6 3.5.9 5.1L12 15l-4.5 2.4.9-5.1L4.8 8.8l5-.7z"/></svg>
+          Quiz
+        </a>
+        <a href="aide.html">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 4v2M12 18v2M4 12h2M18 12h2"/></svg>
+          Aide
+        </a>
+
+        <p class="nav-label nav-account">Compte</p>
+        <a href="#footer">Contacts</a>
+        <a href="#deconnexion" data-soon>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 7V5a2 2 0 0 1 2-2h7v18h-7a2 2 0 0 1-2-2v-2M4 12h11M12 8l4 4-4 4"/></svg>
+          Déconnexion
+        </a>
+
+        <a class="nav-strong" href="#profil" data-soon>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 19.5a6.5 6.5 0 0 1 13 0"/></svg>
+          Mon profil
+        </a>
+      </nav>
+    </aside>
+
+    <main id="accueil">
+      <div class="wrap">
+        <header class="hero">
+          <p class="eyebrow">Prévention numérique</p>
+          <div class="hero-top">
+            <div class="hero-copy">
+              <h1>
+                <span class="h1-line">Bonjour Marie, <mark>votre sérénité numérique, c’est vous.</mark></span>
+                <span class="h1-line">La vigilance, c’est nous.</span>
+              </h1>
+              <p class="lede">
+                Messages suspects, fuites de données, fausses urgences :
+                protégez votre quotidien connecté avec un espace simple, clair
+                et actionnable.
+              </p>
+            </div>
+            <div class="hero-brand">
+              <div class="partner">
+                <span>En partenariat avec</span>
+                <img src="assets/axa.png" alt="AXA" />
+              </div>
+              <img
+                class="ernest"
+                src="assets/ernest.png"
+                alt="Ernest, bras croisés"
+              />
+            </div>
+          </div>
+        </header>
+
+        <section class="launch" aria-label="Actions principales">
+          <button class="launch-card" type="button">
+            <h3>Vérifier mes<br />données</h3>
+            <p>En quelques instants</p>
+            <span class="launch-go">C’est parti ! →</span>
+          </button>
+          <button class="launch-card" type="button">
+            <h3>Me former</h3>
+            <p>A votre rythme</p>
+            <span class="launch-go">C’est parti ! →</span>
+          </button>
+        </section>
+
+        <section class="band block" aria-labelledby="start-title">
+          <h2 id="start-title">Parcours</h2>
+          <div class="start-cards">
+            <article class="start-card">
+              <h3>Sécuriser les données</h3>
+              <p>
+                Contrôlez vos coordonnées et suivez les actions recommandées.
+              </p>
+              <button type="button">Lancer une analyse</button>
+            </article>
+            <article class="start-card">
+              <h3>Me sensibiliser</h3>
+              <p>Webinaires, modules et mises en situation guidées.</p>
+              <button type="button">Voir les formations</button>
+            </article>
+            <article class="start-card">
+              <h3>Alerter la communauté</h3>
+              <p>Contribuez à la veille collective en partageant une arnaque.</p>
+              <button type="button">Signaler</button>
+            </article>
+          </div>
+        </section>
+
+        <section class="block session-row" aria-label="Session et réflexes">
+          <div class="session-col">
+            <h2>Sessions</h2>
+            <div class="session-frame">
+            <div class="session-main">
+              <img
+                class="session-visual"
+                src="assets/session.png"
+                alt="Personne et son chien face à un ordinateur, entourés de signes d’arnaques"
+              />
+              <div class="session-copy">
+                <h3>Reconnaître et éviter les principales arnaques en ligne</h3>
+                <p class="meta">
+                  <span>16/10/2026</span>
+                  <span>10:00</span>
+                </p>
+                <p>
+                  Faux messages, sites frauduleux, offres trop belles pour être
+                  vraies, demandes de paiement urgentes… Les arnaques en ligne
+                  peuvent prendre de nombreuses formes et il n’est pas toujours
+                  facile de les repérer.
+                </p>
+              </div>
+            </div>
+            <div class="session-cta">
+              <button class="cube-btn" type="button" aria-label="Rejoindre la session">
+                <span class="cube">
+                  <span class="face face-front">Rejoindre la session</span>
+                  <span class="face face-top" aria-hidden="true">Rejoindre la session</span>
+                </span>
+              </button>
+            </div>
+            </div>
+          </div>
+
+          <div class="reflex-col">
+            <div class="reflexes" id="reflexes">
+              <h2>Réflexes</h2>
+              <p class="reflex-kicker">Bonnes pratiques</p>
+              <div class="reflex-window">
+                <div class="reflex-track">
+                  <article class="reflex-slide">
+                    <h3>Authentification</h3>
+                    <p>
+                      Activez la double authentification sur vos comptes
+                      sensibles.
+                    </p>
+                  </article>
+                  <article class="reflex-slide">
+                    <h3>Vigilance</h3>
+                    <p>
+                      Ne cliquez jamais sur un lien reçu sans vérifier
+                      l’expéditeur.
+                    </p>
+                  </article>
+                  <article class="reflex-slide">
+                    <h3>Accompagnement</h3>
+                    <p>
+                      Besoin d’aide&nbsp;? Consultez la FAQ ou contactez un
+                      conseiller.
+                    </p>
+                  </article>
+                  <article class="reflex-slide" aria-hidden="true">
+                    <h3>Authentification</h3>
+                    <p>
+                      Activez la double authentification sur vos comptes
+                      sensibles.
+                    </p>
+                  </article>
+                </div>
+              </div>
+              <p class="reflex-live visually-hidden" aria-live="polite"></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="band block" id="actualites" aria-labelledby="news-title">
+          <h2 id="news-title">Fil d’actualités et arnaques</h2>
+          <div class="news-grid">
+            <article class="card" tabindex="0">
+              <img src="assets/article.png" alt="" />
+              <h3>
+                Apple Pay&nbsp;: les arnaques les plus fréquentes et comment
+                les éviter
+              </h3>
+              <p class="card-meta">
+                <span>3 minutes</span>
+                <span>12/10/26</span>
+              </p>
+              <div class="card-cover">
+                <p>
+                  Des SMS et notifications imitent Apple Pay pour réclamer un
+                  paiement urgent. Ils évoquent une activité inhabituelle sur
+                  votre compte. N’ouvrez pas le lien&nbsp;: lancez vous-même
+                  l’application de votre banque et vérifiez l’expéditeur.
+                </p>
+              </div>
+            </article>
+            <article class="card" tabindex="0">
+              <img src="assets/article.png" alt="" />
+              <h3>
+                Apple Pay&nbsp;: les arnaques les plus fréquentes et comment
+                les éviter
+              </h3>
+              <p class="card-meta">
+                <span>3 minutes</span>
+                <span>12/10/26</span>
+              </p>
+              <div class="card-cover">
+                <p>
+                  Des SMS et notifications imitent Apple Pay pour réclamer un
+                  paiement urgent. Ils évoquent une activité inhabituelle sur
+                  votre compte. N’ouvrez pas le lien&nbsp;: lancez vous-même
+                  l’application de votre banque et vérifiez l’expéditeur.
+                </p>
+              </div>
+            </article>
+            <article class="card" tabindex="0">
+              <img src="assets/article.png" alt="" />
+              <h3>
+                Apple Pay&nbsp;: les arnaques les plus fréquentes et comment
+                les éviter
+              </h3>
+              <p class="card-meta">
+                <span>3 minutes</span>
+                <span>12/10/26</span>
+              </p>
+              <div class="card-cover">
+                <p>
+                  Des SMS et notifications imitent Apple Pay pour réclamer un
+                  paiement urgent. Ils évoquent une activité inhabituelle sur
+                  votre compte. N’ouvrez pas le lien&nbsp;: lancez vous-même
+                  l’application de votre banque et vérifiez l’expéditeur.
+                </p>
+              </div>
+            </article>
+          </div>
+          <a class="news-more" href="actualites.html">Lire les autres articles →</a>
+        </section>
+
+        <section class="block help" id="aide" aria-labelledby="help-title">
+          <h2 id="help-title">Besoin d’être accompagné&nbsp;?</h2>
+          <p class="lede">
+            Les arnaques évoluent vite&nbsp;: restez informé avec nos
+            décryptages récents.
+          </p>
+          <button class="cube-btn" type="button" aria-label="Contacter un conseiller">
+            <span class="cube">
+              <span class="face face-front">Contacter un conseiller</span>
+              <span class="face face-top" aria-hidden="true">Contacter un conseiller</span>
+            </span>
+          </button>
+        </section>
+      </div>
+
+      <footer id="footer">
+        <div class="footer-red" aria-hidden="true"></div>
+        <div class="footer-blue">
+          <img class="logo logo-light" src="assets/logo.png" alt="ernest" />
+          <div class="footer-contact">
+            <p class="footer-label">Contact</p>
+            <a href="mailto:contact@mon-compagnon-ernest.com"
+              >contact@mon-compagnon-ernest.com</a
+            >
+          </div>
+          <nav class="footer-nav" aria-label="Informations légales">
+            <a href="#footer">CGU</a>
+            <a href="#footer">Mentions légales</a>
+            <a href="#footer">Politique de confidentialité</a>
+          </nav>
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
